@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>InfoServlet</servlet-name>
+        <servlet-class>com.example.InfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InfoServlet</servlet-name>
+        <url-pattern>/info</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.example.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>CrudServlet</servlet-name>
+        <servlet-class>com.example.CrudServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrudServlet</servlet-name>
+        <url-pattern>/crud</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.example.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.example.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListUsersServlet</servlet-name>
+        <servlet-class>com.example.ListUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListUsersServlet</servlet-name>
+        <url-pattern>/listUsers</url-pattern>
+    </servlet-mapping>
+   <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
